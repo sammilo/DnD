@@ -35,11 +35,11 @@ const App = () => {
   let element = useRoutes([
     {
       path: "/",
-      element:<ViewParty data={posts}/>
+      element:<ViewPosts data={posts}/>
     },
     {
       path:"/edit/:id",
-      element: <EditParty data={posts} />
+      element: <EditPost data={posts} />
     },
     {
       path:"/new",
@@ -54,7 +54,7 @@ const App = () => {
       <div className="header">
         <h1>DnD Party</h1>
         <Link to="/"><button className="headerBtn"> View Party 🔍  </button></Link>
-        <Link to="/new"><button className="headerBtn"> Add Character 📓 </button></Link>
+        <Link to="/new"><button className="headerBtn"> Add Party Member 📓 </button></Link>
       </div>
         {element}
     </div>
