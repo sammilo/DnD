@@ -4,6 +4,7 @@ import { useRoutes } from 'react-router-dom'
 import ReadPosts from './pages/ReadPosts'
 import CreatePost from './pages/CreatePost'
 import EditPost from './pages/EditPost'
+import ViewPost from './pages/ViewPost'
 import { Link } from 'react-router-dom'
 
 
@@ -35,11 +36,15 @@ const App = () => {
   let element = useRoutes([
     {
       path: "/",
-      element:<ViewPosts data={posts}/>
+      element:<ReadPosts data={posts}/>
     },
     {
       path:"/edit/:id",
       element: <EditPost data={posts} />
+    },
+    {
+      path:"/view/:id",
+      element: <ViewPost />
     },
     {
       path:"/new",

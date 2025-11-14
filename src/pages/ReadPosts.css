@@ -4,3 +4,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
+
+#default-text {
+    color: rgb(240, 182, 255);
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 100%;
+}

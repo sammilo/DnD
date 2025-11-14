@@ -4,7 +4,7 @@ Submitted by: **Samantha Milo**
 
 This web app: **Helps you create your DnD Party and keep track of other part members.**
 
-Time spent: **6** hours spent in total
+Time spent: **10** hours spent in total
 
 ## Required Features
 
@@ -21,13 +21,13 @@ The following **required** functionality is completed:
   - Each crewmate has an edit button that will take users to an update form for the relevant crewmate
   - Users can see the current attributes of their crewmate on the update form
   - After editing the crewmate's attribute values using the form, the user can immediately see those changes reflected in the update form and on the summary page 
-- [ ] **A previously created crewmate can be deleted from the crewmate list**
+- [X] **A previously created crewmate can be deleted from the crewmate list**
   - Using the edit form detailed in the previous _crewmates can be updated_ feature, there is a button that allows users to delete that crewmate
   - After deleting a crewmate, the crewmate should no longer be visible in the summary page
-  - [ ] **Each crewmate has a direct, unique URL link to an info page about them**
-    - Clicking on a crewmate in the summary page navigates to a detail page for that crewmate
-    - The detail page contains extra information about the crewmate not included in the summary page
-    - Users can navigate to to the edit form from the detail page
+- [X] **Each crewmate has a direct, unique URL link to an info page about them**
+  - Clicking on a crewmate in the summary page navigates to a detail page for that crewmate
+  - The detail page contains extra information about the crewmate not included in the summary page
+  - Users can navigate to to the edit form from the detail page
 
 The following **optional** features are implemented:
 
@@ -43,7 +43,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [X] One trait can be updated at a time (rather than having to edit all fields for changes to go through)
 
 ## Video Walkthrough
 
@@ -56,11 +56,11 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+It's best to keep pages and components seperate rather than shoving it all in one file. Makes for a much cleaner and easer to debug experience. 
 
 ## License
 
-    Copyright [2025] [nSamantha Milo]
+    Copyright [2025] [Samantha Milo]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

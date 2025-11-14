@@ -4,15 +4,18 @@ import './CreatePost.css'
 
 const CreatePost = () => {
 
-    const [post, setPost] = useState({creator: "", name: "", level: "", race: "", class: "", story: ""})
+    const [post, setPost] = useState({creator: "", name: "", level: "", species: "", class: "", story: "", secret: ""})
 
     const createPost = async (event) => {
         event.preventDefault()
 
         await supabase
             .from('Party')
-            .insert({creator: post.creator, name: post.name, level: post.level, race: post.race, class: post.class, story: post.story})
+            .insert({creator: post.creator, name: post.name, level: post.level, species: post.species, class: post.class, story: post.story, secret: post.secret})
             .select()
+        
+        window.location = "/"
+    }
 
     const handleChange = (event) => {
         const {name, value} = event.target
@@ -26,8 +29,8 @@ const CreatePost = () => {
 
     return (
         <div>
-            <form>
-                <label htmlFor="creator">Creator</label> <br />
+            <form onSubmit={createPost}>
+                <label htmlFor="creator">Creator</label><br />
                 <input type="text" id="creator" name="creator" onChange={handleChange} /><br />
                 <br/>
 
@@ -39,8 +42,17 @@ const CreatePost = () => {
                 <input type="text" id="level" name="level" onChange={handleChange} /><br />
                 <br/>
 
-                <label htmlFor="race">Race</label><br />
-                <input type="text" id="race" name="race" onChange={handleChange} /><br />
+                <label htmlFor="species">Species</label><br />
+                <select id="species" name="species" onChange={handleChange}>
+                    <option value="">Select a species</option>
+                    <option value="human">Human</option>
+                    <option value="elf">Elf</option>
+                    <option value="dragonborn">Dragonborn</option>
+                    <option value="dwarf">Dwarf</option>
+                    <option value="gnome">Gnome</option>
+                    <option value="tiefling">Tiefling</option>
+                    <option value="orc">Orc</option>
+                </select><br />
                 <br/>   
 
                 <label htmlFor="class">Class</label><br />
@@ -50,10 +62,16 @@ const CreatePost = () => {
                 <label htmlFor="story">Story</label><br />
                 <textarea rows="5" cols="50" id="story" name="story" onChange={handleChange}>
                 </textarea>
-                <input type="submit" value="Submit" />
+                <br />
+
+                <label htmlFor="secret">Secret</label><br />
+                <input type="text" id="secret" name="secret" onChange={handleChange} /><br />
+                <br/>
+
+                <input type="submit" value="Submit"/>
             </form>
         </div>
     )
 }
-}
+
 export default CreatePost
