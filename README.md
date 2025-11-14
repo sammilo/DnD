@@ -1,4 +1,4 @@
-# Web Development Project 7 - *Name of App Here*
+# Web Development Project 7 - *DnD Party*
 
 Submitted by: **Samantha Milo**
 
@@ -49,7 +49,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/user-attachments/assets/0cde7d30-9887-47c3-8f19-1186c924534e' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with ...  
 [ScreenToGif](https://www.screentogif.com/) for Windows
